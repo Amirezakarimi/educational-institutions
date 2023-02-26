@@ -1,0 +1,583 @@
+@font-face {
+    font-family: Vazir;
+    src: url(../Fonts/Vazir-FD-WOL.woff) format("woff");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    direction: rtl;
+    background-color: rgb(255, 255, 255);
+    font-family: Vazir;
+}
+
+/*-------------------------------header-----------------------------------*/
+
+#header {
+    display: block;
+    height: 600px;
+}
+
+.imgTop,
+.pcImgTop {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+}
+
+.imgTop {
+    width: 53vw;
+}
+
+.pcImgTop {
+    width: 35vw;
+    top: 95px;
+    left: 60px;
+}
+
+.topMenu {
+    font-size: 20px;
+    margin: 2px 15px;
+
+}
+
+.clicked {
+    font-weight: 20px;
+    font-weight: bold;
+    background-color: #d0ccee;
+    padding: 5px 8px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#rightLinks {
+    float: right;
+    cursor: pointer;
+}
+
+#leftLinks {
+    float: left;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.lefLinksStyleRight {
+    font-weight: 20px;
+    font-weight: bold;
+    background-color: rgb(161, 156, 204);
+    padding: 5px 8px;
+    border-radius: 12px;
+}
+
+#topMenuDiv {
+    padding-top: 20px;
+}
+
+#rightHeader {
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    position: absolute;
+    top: 180px;
+    right: 40px;
+}
+
+.rightHeaderUp {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.rightHeaderDown {
+    font-weight: bold;
+    font-size: 60px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.rightHeader3 {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    background: -webkit-linear-gradient(left, rgb(131, 131, 226), rgb(180, 107, 223));
+    padding: 5px 10px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.rightHeader3:hover {
+    background: rgb(255,255,255);
+    transition: .15s;
+    border: 1px solid rgb(180, 107, 223);
+    color: rgb(180, 107, 223);
+}
+
+/*---------------------------------services---------------------------------*/
+
+#services {
+    margin-top: 60px;
+    height: 700px;
+}
+
+#titleServices {
+    text-align: center;
+}
+
+.titleCenterServices {
+    font-size: 50px;
+    font-weight: bold;
+    display: block;
+}
+
+.titleCenterSubServices {
+    font-size: 25px;
+    color: gray;
+    display: block;
+    margin-bottom: 80px;
+}
+
+.imgLeftServices {
+    width: 500px;
+    height: 500px;
+    float: left;
+    position: absolute;
+    left: 80px;
+}
+
+#flex-Services {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10vw;
+    position: absolute;
+    margin-top: 40px;
+}
+
+.servicesItem {
+    width: 80px;
+    height: 80px;
+    padding: 45px 45px;
+    background-color: rgb(248, 245, 245);
+    border-radius: 15px;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 50px rgb(201, 200, 200);
+}
+
+.servicesImgItem {
+    width: 60px;
+}
+
+.flexServices {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+
+}
+
+.flexServicesLeft {
+    padding-top: 50px;
+
+}
+
+.servicesShapeBackground {
+    width: 400px;
+    float: right;
+    position: absolute;
+    right: 80px;
+    margin-top: 40px;
+    z-index: -1;
+}
+
+/*-----------------------------category-------------------------------------*/
+
+#category {
+    margin-top: 60px;
+    height: 600px;
+}
+
+#titleCategory {
+    text-align: center;
+}
+
+.titleCenterCategory {
+    font-size: 50px;
+    font-weight: bold;
+    display: block;
+}
+
+.titleCenterSubCategory {
+    font-size: 25px;
+    color: gray;
+    display: block;
+    margin-bottom: 100px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15vw;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    margin-bottom: 30px;
+}
+
+.categoryItems {
+    width: 100px;
+    height: 100px;
+    padding: 43px 43px;
+    background-color: rgb(248, 246, 246);
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 0px 50px rgb(214, 214, 214);
+    color: gray;
+    text-align: center;
+}
+
+.categoryImg {
+    width: 80px;
+    height: 70px;
+}
+
+/*-------------------------------series-----------------------------------*/
+
+#series {
+    margin-top: 60px;
+    height: 600px;
+}
+
+#titleSeries {
+    text-align: center;
+}
+
+.titleCenterSeries {
+    font-size: 50px;
+    font-weight: bold;
+    display: block;
+}
+
+.titleCenterSubSeries {
+    font-size: 25px;
+    display: block;
+    margin-bottom: 80px;
+    color: gray;
+}
+
+.leftImgSeries {
+    width: 40%;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: “FlipH”;
+    float: left;
+    margin-left: 30px;
+}
+
+.bottenSeries {
+    color: rgb(0, 0, 255);
+    font-size: 20px;
+    border: 2px solid;
+    border-radius: 50px;
+    padding: 5px 30px;
+    position: relative;
+    right: 45%;
+}
+
+.rightMainFrameSeries {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 10vw;
+    margin: 40px 150px 30px 0px;
+    cursor: pointer;
+}
+
+.topFrameSeries {
+    margin-bottom: 25px;
+}
+
+.LeftFrameSeries {
+    margin-right: 10px;
+    margin-right: 25px;
+}
+
+
+.frameSeries {
+    text-align: center;
+}
+
+.imgFrameSeries {
+    margin-top: 30px;
+    margin-bottom: 17px;
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.titleFrameSeries {
+    font-size: 20px;
+    display: block;
+}
+
+.subTitleFrameSeries {
+    position: relative;
+    top: 10px;
+    font-size: 14px;
+    color: #a1a1a1;
+}
+
+/*--------------------------------News----------------------------------*/
+#News {
+    margin-top: 250px;
+    height: 800px;
+}
+
+.sectionTitle {
+    text-align: center;
+}
+
+.titleCenterNews {
+    font-size: 50px;
+    font-weight: bold;
+    display: block;
+}
+
+.titleCenterSubNews {
+    font-size: 25px;
+    display: block;
+    margin-bottom: 60px;
+    color: gray;
+}
+
+.reightFrameNews {
+    float: right;
+}
+
+.rightTitleFrameNews {
+    font-size: 20px;
+    color: gray;
+    position: relative;
+    right: 80px;
+
+}
+
+.leftTitleFrameNews {
+    color: gray;
+    font-size: 20px;
+    position: relative;
+    left: 600px;
+}
+
+.bottenNews {
+    color: rgb(173, 48, 223);
+    font-size: 20px;
+    border: 2px solid;
+    border-radius: 50px;
+    padding: 5px 30px;
+    position: relative;
+    top: 80px;
+    right: 45%;
+    cursor: pointer;
+}
+
+.mainFrameNews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: stretch;
+}
+
+.subMainFrameNews {
+    margin: 0px 80px;
+}
+
+.rightFramenews {
+    margin-bottom: 15px;
+    box-shadow: 0px 5px 50px rgb(201, 201, 201);
+}
+
+.imgNews {
+    margin-top: 3%;
+    margin-right: 5%;
+    width: 90px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.insideFrameNews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    align-content: stretch;
+    float: right;
+}
+
+.paragraphFrameNews {
+    position: relative;
+    top: 15px;
+    right: 25px;
+}
+
+/* ------------------ suggestions --------------------------  */
+
+.suggestions {
+    height: 800px;
+}
+
+.leftImgsuggestions {
+    margin-top: 40px;
+    float: left;
+    margin-left: 80px;
+}
+
+.rightFrameSuggestion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    margin-top: 80px;
+    margin-right: 100px;
+}
+
+.registerSuggestion {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    background: -webkit-linear-gradient(left, rgb(131, 131, 226), rgb(180, 107, 223));
+    padding: 5px 43px;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    right: 40%;
+    font-weight: bold;
+    transition: .15s;
+}
+
+.registerSuggestion:hover {
+    background: rgb(255,255,255);
+    transition: .15s;
+    border: 1px solid rgb(180, 107, 223);
+    color: rgb(180, 107, 223);
+}
+
+.titleFrameSuggestion {
+    color: #a1a1a1;
+    font-size: 18px;
+    margin-right: 30px;
+    position: relative;
+    top: 7px;
+}
+
+.fieldFrameSuggestion {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 10px 20px;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #ececec;
+    font-size: 18px;
+    border: white;
+}
+
+.suggestionTextArea {
+    padding: 8px;
+    margin: 15px 25px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    background-color: #ececec;
+    font-size: 18px;
+    border: white;
+    resize: none;
+}
+
+/* ------------------ footer --------------------------  */
+
+.footer {
+    height: 500px;
+    background-image: url(../img/map2.jpg);
+}
+
+.textFooter {
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(131, 131, 226);
+}
+
+.frameFooter {
+    position: relative;
+    top: 10%;
+    right: 5%;
+}
+
+.imgFooter {
+    width: 40px;
+    height: 40px;
+}
+
+.imgMapIcon {
+    width: 40px;
+    height: 55px;
+}
+
+.footerMapIcon {
+    width: auto;
+    float: left;
+    position: relative;
+    top: 20%;
+    left: 30%;
+}
+
+.mainFooterShape {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: stretch;
+    /* padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto; */
+    position: relative;
+    top: 20%;
+    left: 20%;
+}
+
+.imgFooter {
+    margin-bottom: 25px;
+    margin-right: 30px;
+}
+
+.textFooter {
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.footerIcon {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerTitle {
+    display: flex;
+    flex-direction: column;
+}
