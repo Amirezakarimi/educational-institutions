@@ -1,5 +1,5 @@
 # educational-institutions
-A working example of an educational-institutions website developed with HTML and CSS and JS.
+A working example of an educational-institutions website developed with HTML and CSS.
 
 Developed by Amirreza Karimi
 
